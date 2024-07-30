@@ -7,7 +7,7 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
-public class Program {
+public class Program2 {
 
 	public static void main(String[] args) {
 		
@@ -17,10 +17,12 @@ public class Program {
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
+		Seller seller1 = sellerDao.findById(3);
 		
 		System.out.println(obj);
 		System.out.println(seller);
 		System.out.println(sellerDao);
+		System.out.println(seller1);
 	}
 
 }
